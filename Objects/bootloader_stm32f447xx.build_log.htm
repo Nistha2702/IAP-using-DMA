@@ -1,0 +1,171 @@
+<html>
+<body>
+<pre>
+<h1>µVision Build Log</h1>
+<h2>Tool Versions:</h2>
+IDE-Version: µVision V5.31.0.0
+Copyright (C) 2020 ARM Ltd and ARM Germany GmbH. All rights reserved.
+License Information: Nistha Kumari, Nirma, LIC=----
+ 
+Tool Versions:
+Toolchain:       MDK-Lite  Version: 5.31.0.0
+Toolchain Path:  C:\Keil_v5\ARM\ARMCC\Bin
+C Compiler:      Armcc.exe V5.06 update 6 (build 750)
+Assembler:       Armasm.exe V5.06 update 6 (build 750)
+Linker/Locator:  ArmLink.exe V5.06 update 6 (build 750)
+Library Manager: ArmAr.exe V5.06 update 6 (build 750)
+Hex Converter:   FromElf.exe V5.06 update 6 (build 750)
+CPU DLL:         SARMCM3.DLL V5.31.0.0
+Dialog DLL:      DCM.DLL V1.17.3.0
+Target DLL:      STLink\ST-LINKIII-KEIL_SWO.dll V3.0.7.0
+Dialog DLL:      TCM.DLL V1.46.0.0
+ 
+<h2>Project:</h2>
+C:\Users\nisco\Desktop\Embedded_C\PROJECTS\New folder\MINOR\BOOTLOADER\bootloader_stm32f447xx.uvprojx
+Project File Date:  07/20/2021
+
+<h2>Output:</h2>
+*** Using Compiler 'V5.06 update 6 (build 750)', folder: 'C:\Keil_v5\ARM\ARMCC\Bin'
+Rebuild target 'Target 1'
+compiling stm32f4xx_hal_cortex.c...
+compiling stm32f4xx_it.c...
+compiling stm32f4xx_hal_crc.c...
+compiling stm32f4xx_hal.c...
+compiling stm32f4xx_hal_dma.c...
+compiling main.c...
+RTE\Device\STM32F407VGTx\STCubeGenerated\Src\main.c(109): warning:  #61-D: integer operation result is out of range
+  			*pOPTCR |= (1 << 31);
+RTE\Device\STM32F407VGTx\STCubeGenerated\Src\main.c(109): warning:  #68-D: integer conversion resulted in a change of sign
+  			*pOPTCR |= (1 << 31);
+RTE\Device\STM32F407VGTx\STCubeGenerated\Src\main.c(94): warning:  #177-D: variable "protection_mode"  was declared but never referenced
+  	uint8_t protection_mode =2 ;
+RTE\Device\STM32F407VGTx\STCubeGenerated\Src\main.c(262): warning:  #513-D: a value of type "void *" cannot be assigned to an entity of type "void (*)(void)"
+      app_reset_handler = (void*) resethandler_address;
+RTE\Device\STM32F407VGTx\STCubeGenerated\Src\main.c(650): warning:  #144-D: a value of type "void *" cannot be used to initialize an entity of type "void (*)(void)"
+              void (*lets_jump)(void) = (void *)go_address;
+RTE\Device\STM32F407VGTx\STCubeGenerated\Src\main.c(690): warning:  #188-D: enumerated type mixed with another type
+          HAL_GPIO_WritePin(LD2_GPIO_Port, LD2_Pin,1);
+RTE\Device\STM32F407VGTx\STCubeGenerated\Src\main.c(692): warning:  #188-D: enumerated type mixed with another type
+          HAL_GPIO_WritePin(LD2_GPIO_Port, LD2_Pin,0);
+RTE\Device\STM32F407VGTx\STCubeGenerated\Src\main.c(708): warning:  #177-D: variable "addr_valid"  was declared but never referenced
+  	uint8_t addr_valid = ADDR_VALID;
+RTE\Device\STM32F407VGTx\STCubeGenerated\Src\main.c(710): warning:  #550-D: variable "chksum"  was set but never used
+  	uint8_t chksum =0, len=0;
+RTE\Device\STM32F407VGTx\STCubeGenerated\Src\main.c(1035): warning:  #188-D: enumerated type mixed with another type
+  		status = (uint8_t) HAL_FLASHEx_Erase(&flashErase_handle, &sectorError);
+RTE\Device\STM32F407VGTx\STCubeGenerated\Src\main.c(1099): warning:  #61-D: integer operation result is out of range
+  			*pOPTCR &= ~(1 << 31);
+RTE\Device\STM32F407VGTx\STCubeGenerated\Src\main.c(1129): warning:  #61-D: integer operation result is out of range
+  			*pOPTCR &= ~(1 << 31);
+RTE\Device\STM32F407VGTx\STCubeGenerated\Src\main.c(1154): warning:  #61-D: integer operation result is out of range
+  			*pOPTCR |= (1 << 31);
+RTE\Device\STM32F407VGTx\STCubeGenerated\Src\main.c(1154): warning:  #68-D: integer conversion resulted in a change of sign
+  			*pOPTCR |= (1 << 31);
+RTE\Device\STM32F407VGTx\STCubeGenerated\Src\main.c: 14 warnings, 0 errors
+compiling stm32f4xx_hal_dma_ex.c...
+compiling stm32f4xx_hal_pwr.c...
+compiling stm32f4xx_hal_pwr_ex.c...
+compiling stm32f4xx_hal_flash_ex.c...
+compiling stm32f4xx_hal_rcc_ex.c...
+compiling stm32f4xx_hal_gpio.c...
+assembling startup_stm32f407xx.s...
+compiling stm32f4xx_hal_flash.c...
+compiling stm32f4xx_hal_rcc.c...
+compiling system_stm32f4xx.c...
+compiling stm32f4xx_hal_msp.c...
+compiling stm32f4xx_hal_uart.c...
+linking...
+Program Size: Code=11246 RO-data=450 RW-data=56 ZI-data=1992  
+".\Objects\bootloader_stm32f447xx.axf" - 0 Error(s), 14 Warning(s).
+
+<h2>Software Packages used:</h2>
+
+Package Vendor: ARM
+                http://www.keil.com/pack/ARM.CMSIS.5.7.0.pack
+                ARM.CMSIS.5.7.0
+                CMSIS (Cortex Microcontroller Software Interface Standard)
+   * Component: CORE Version: 5.4.0
+
+Package Vendor: Keil
+                project-path/Keil.FrameworkCubeMX.1.0.0.pack
+                Keil.FrameworkCubeMX.1.0.0
+                STM32CubeMX generated pack description
+   * Component: STM32CubeMX Version: 1.1.0
+
+Package Vendor: Keil
+                http://www.keil.com/pack/Keil.STM32F4xx_DFP.2.15.0.pack
+                Keil.STM32F4xx_DFP.2.15.0
+                STMicroelectronics STM32F4 Series Device Support, Drivers and Examples
+   * Component: STM32Cube Framework Version: 1.0.0
+   * Component: CRC Version: 1.7.9
+   * Component: Common Version: 1.7.9
+   * Component: Cortex Version: 1.7.9
+   * Component: DMA Version: 1.7.9
+   * Component: Flash Version: 1.7.9
+   * Component: GPIO Version: 1.7.9
+   * Component: PWR Version: 1.7.9
+   * Component: RCC Version: 1.7.9
+   * Component: UART Version: 1.7.9
+   * Component: Startup Version: 2.6.3
+
+<h2>Collection of Component include folders:</h2>
+  .\RTE\Device\STM32F407VGTx
+  .\RTE\Device\STM32F407VGTx\STCubeGenerated\Inc
+  .\RTE\_Target_1
+  C:\Users\nisco\AppData\Local\Arm\Packs\ARM\CMSIS\5.7.0\CMSIS\Core\Include
+  C:\Users\nisco\AppData\Local\Arm\Packs\Keil\STM32F4xx_DFP\2.15.0\Drivers\CMSIS\Device\ST\STM32F4xx\Include
+  C:\Users\nisco\AppData\Local\Arm\Packs\Keil\STM32F4xx_DFP\2.15.0\Drivers\STM32F4xx_HAL_Driver\Inc
+
+<h2>Collection of Component Files used:</h2>
+
+   * Component: ::Device:STM32Cube Framework:1.0.0 (API)
+
+   * Component: ARM::CMSIS:CORE:5.4.0
+
+   * Component: Keil::Device:STM32Cube Framework:STM32CubeMX:1.1.0
+      Include file:  STCubeGenerated\Inc\stm32f4xx_hal_conf.h
+      Include file:  MX_Device.h
+      Source file:   STCubeGenerated\Src\stm32f4xx_hal_msp.c
+
+   * Component: Keil::Device:STM32Cube HAL:CRC:1.7.9
+      Source file:   Drivers\STM32F4xx_HAL_Driver\Src\stm32f4xx_hal_crc.c
+
+   * Component: Keil::Device:STM32Cube HAL:Common:1.7.9
+      Source file:   Drivers\STM32F4xx_HAL_Driver\Src\stm32f4xx_hal.c
+      Include file:  Drivers\STM32F4xx_HAL_Driver\Inc\stm32f4xx_hal.h
+
+   * Component: Keil::Device:STM32Cube HAL:Cortex:1.7.9
+      Source file:   Drivers\STM32F4xx_HAL_Driver\Src\stm32f4xx_hal_cortex.c
+
+   * Component: Keil::Device:STM32Cube HAL:DMA:1.7.9
+      Source file:   Drivers\STM32F4xx_HAL_Driver\Src\stm32f4xx_hal_dma.c
+      Source file:   Drivers\STM32F4xx_HAL_Driver\Src\stm32f4xx_hal_dma_ex.c
+
+   * Component: Keil::Device:STM32Cube HAL:Flash:1.7.9
+      Source file:   Drivers\STM32F4xx_HAL_Driver\Src\stm32f4xx_hal_flash_ex.c
+      Source file:   Drivers\STM32F4xx_HAL_Driver\Src\stm32f4xx_hal_flash.c
+
+   * Component: Keil::Device:STM32Cube HAL:GPIO:1.7.9
+      Source file:   Drivers\STM32F4xx_HAL_Driver\Src\stm32f4xx_hal_gpio.c
+
+   * Component: Keil::Device:STM32Cube HAL:PWR:1.7.9
+      Source file:   Drivers\STM32F4xx_HAL_Driver\Src\stm32f4xx_hal_pwr.c
+      Source file:   Drivers\STM32F4xx_HAL_Driver\Src\stm32f4xx_hal_pwr_ex.c
+
+   * Component: Keil::Device:STM32Cube HAL:RCC:1.7.9
+      Source file:   Drivers\STM32F4xx_HAL_Driver\Src\stm32f4xx_hal_rcc.c
+      Source file:   Drivers\STM32F4xx_HAL_Driver\Src\stm32f4xx_hal_rcc_ex.c
+
+   * Component: Keil::Device:STM32Cube HAL:UART:1.7.9
+      Source file:   Drivers\STM32F4xx_HAL_Driver\Src\stm32f4xx_hal_uart.c
+
+   * Component: Keil::Device:Startup:2.6.3
+      Source file:   MDK\Device\Source\ARM\STM32F40xxx_41xxx_OPT.s
+      Source file:   MDK\Device\Source\ARM\STM32F4xx_OTP.s
+      Source file:   Drivers\CMSIS\Device\ST\STM32F4xx\Source\Templates\arm\startup_stm32f407xx.s
+      Include file:  Drivers\CMSIS\Device\ST\STM32F4xx\Include\stm32f4xx.h
+      Source file:   Drivers\CMSIS\Device\ST\STM32F4xx\Source\Templates\system_stm32f4xx.c
+Build Time Elapsed:  00:00:42
+</pre>
+</body>
+</html>
